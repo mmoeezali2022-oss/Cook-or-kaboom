@@ -1,0 +1,41 @@
+COOK OR KABOOM! - PRODUCTION WEBSITE BUILD
+
+This archive contains the compiled existing website and game, including its
+3D graphics, game logic, local fonts, supplied soundtrack in OGG and MP3,
+favicon and third-party licenses. The game was not replaced or simplified.
+There is no source-code preview or development server in this package.
+
+GET A CLICKABLE HTTPS WEBSITE
+1. Extract this ZIP on your computer.
+2. Sign in to your Netlify account and open https://app.netlify.com/drop
+3. Drag the extracted folder that DIRECTLY contains index.html onto the
+   upload area. Upload the entire folder, including assets, audio and licenses.
+4. Wait for deployment to finish. Open the HTTPS *.netlify.app URL shown by
+   Netlify. That is the playable website link you can share.
+
+The build is already complete. Do not run npm install or a build command.
+No backend, Node runtime, API keys or environment variables are required.
+A Netlify account and its applicable hosting terms/limits apply.
+
+OTHER STATIC HOSTS
+Upload the ZIP contents to the site's document root (for example public_html
+on a configured Hostinger website), then enable the host's HTTPS certificate.
+index.html must sit directly at the domain root, not inside a dist folder or
+a repository-name subdirectory. This build uses /assets/ and /audio/ URLs.
+GitHub project-subpath hosting would require a separate base-path adjustment.
+
+VERIFY AFTER UPLOAD
+Open the HTTPS root URL. Choose Play for free, choose your chef and mode, and
+enter the kitchen. Confirm the kitchen renders, movement/cooking controls
+respond, and music plays with its volume above zero after a user gesture.
+Desktop and touch controls are included. A browser supporting WebGL is needed.
+
+LOCAL CHECK (OPTIONAL)
+From the extracted folder: python3 -m http.server 8080
+Then open http://localhost:8080. Do not open index.html with file:// directly.
+This local check is not internet hosting.
+
+PACKAGE VERIFICATION
+BUILD-MANIFEST.json lists every runtime file with size and SHA-256 hash.
+SHA256SUMS.txt also covers the manifest and this deployment guide.
+Retain the audio/SOURCE.txt and licenses folder when distributing the build.
